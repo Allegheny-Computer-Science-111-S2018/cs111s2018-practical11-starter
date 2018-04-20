@@ -25,11 +25,11 @@ Guide](https://google.github.io/styleguide/javaguide.html).
   * Have a for loop implementation
   * Have a do while loop implementation
   
- * The `SwitchDay` program must:
+* The `SwitchDay` program must:
   * Contain at least two multi-line comments
   * Have a switch statement implementation
   
-  * The `CallingMethodsInSameClass` program must:
+* The `CallingMethodsInSameClass` program must:
   * Contain at least five multi-line comments
   * Contain a method called `printThree`
   * Call the `printThree` method from the main method
