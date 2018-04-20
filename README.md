@@ -1,43 +1,13 @@
-<!---
-
-TASK LIST:
-
-  * Use cp -rf *.* to copy all of the files and directories in this repository
-    to the starter repository for this assignment
-  * Change into the directory for the starer repository
-  * Update the header (e.g., #) to only give the name of the assignment
-  * Update the first paragraph to include the commented-out content
-  * Change the link in the # Problems section to point to this lab's starter
-  * Create the assignment in the GitHub Classroom, noting the URL
-  * Test the assignment by accepting it with your own GitHub account
-  * Check to ensure that your GitHub repository is created correctly
-  * Share the assignment link with all of the students using email or Slack
-  
-  PROFESSOR CREATION OF GIT SUBMODULE FOR GATORGRADER:
-
-  * If the submodule is not visible or not working, you can run:
-  * "git submodule add https://github.com/gkapfham/gatorgrader.git gatorgrader"
-
-  * If you want to ensure that the submodule is working in a starter,
-  * then you can "rm -rf .gitmodules" and "rm -rf gatorgrader" first.
-  * Now, you can run the above "git submodule" command above.
-
--->
-
-# cs111s2018-practical11-solution
+# cs111s2018-practical11-starter
 
 Designed for use with [GitHub Classroom](https://classroom.github.com/), this
 repository contains the solution for Practical 11 in Computer Science 111.
 
-<!---
-
- Since the Travis builds for this repository will initially fail (as evidenced by
- a red &#x2717; appearing in the commit logs instead of a green &#x2714;), the
- programmer is responsible for completing all of the steps needed to satisfy the
- requirements for the assignment, thus causing a &#x2714; to instead appear in
- the commit logs.
-
---->
+Since the Travis builds for this repository will initially fail (as evidenced by
+a red &#x2717; appearing in the commit logs instead of a green &#x2714;), the
+programmer is responsible for completing all of the steps needed to satisfy the
+requirements for the assignment, thus causing a &#x2714; to instead appear in
+the commit logs.
 
 ## Introduction
 
@@ -50,14 +20,19 @@ the source code for the `InvestigateExceptions.java` file must adhere to all of
 the requirements in the [Google Java Style
 Guide](https://google.github.io/styleguide/javaguide.html).
 
-There are no GatorGrader checks for the source code in the
-`InvestigateExceptions` file. Instead, you are responsible for writing a short
-report, stored in `writing/exceptions.md` that reports on the behavior of the
-program when it is run in a configuration that individually calls each of the
-commented-out methods. Please run the program, observe the output, try to
-understand why the exception occurs, and then write about your understanding.
-So, the GatorGrader program will check that your writing contains the
-appropriate number of paragraphs.
+* The `LoopStyles` program must:
+  * Contain at least four multi-line comments
+  * Have a for loop implementation
+  * Have a do while loop implementation
+  
+ * The `SwitchDay` program must:
+  * Contain at least two multi-line comments
+  * Have a switch statement implementation
+  
+  * The `CallingMethodsInSameClass` program must:
+  * Contain at least five multi-line comments
+  * Contain a method called `printThree`
+  * Call the `printThree` method from the main method
 
 When you use the `git commit` command to transfer your source code to your
 GitHub repository, [Travis CI](https://travis-ci.com/) will initialize a build
@@ -65,9 +40,6 @@ of your assignment, checking to see if it meets all of the requirements. If both
 your source code and writing meet all of the established requirements, then you
 will see a green &#x2714; in the listing of commits in GitHub. If your
 submission does not meet the requirements, a red &#x2717; will appear instead.
-The instructor will reduce a programmer's grade for this assignment if the red
-&#x2717; appears on the last commit in GitHub immediately before the
-assignment's due date.
 
 A carefully formatted assignment sheet for this project provides more details
 about the steps that a computer scientist should take to complete this
@@ -86,8 +58,8 @@ Projects on GitHub](https://guides.github.com/features/wikis/). Each of these
 guides will help you to understand how to use both [GitHub](http://github.com) and
 [GitHub Classroom](https://classroom.github.com/).
 
-To do well on this assignment, you should also review Chapter 11 of the
-textbook. Please see the course instructor or one of the teaching assistants or
+To do well on this assignment, you should also review Chapter 6, 7 and 8 of the
+textbook. Please see the course instructor or a teaching assistant or
 tutors if you have questions about any of these reading assignments.
 
 ## Commands
@@ -138,8 +110,8 @@ access the private repositories that you created on GitHub.
 ## Problems
 
 If you have found a problem with this assignment's provided source code, then
-you can go to the [Computer Science 111 Practical 10
-Starter](https://github.com/Allegheny-Computer-Science-111-S2018/cs111s2018-practical10-starter)
+you can go to the [Computer Science 111 Practical 11
+Starter](https://github.com/Allegheny-Computer-Science-111-S2018/cs111s2018-practical11-starter)
 repository and create an issue by clicking the "Issues" tab and then clicking
 the green "New Issue" button. If you have found a problem with the [GatorGrader
 tool](https://github.com/gkapfham/gatorgrader) and the way that it checks you

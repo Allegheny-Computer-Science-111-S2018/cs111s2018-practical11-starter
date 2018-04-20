@@ -29,7 +29,7 @@ jar {
 
 // give the name of the application to run with "gradle run" command
 apply plugin: 'application'
-mainClassName = 'practicaleleven.CallingMethodsInSameClass'
+mainClassName = 'practicaleleven.CallingMethodsInSameClass' 
 //mainClassName = 'practicaleleven.LoopStyles'
 //mainClassName = 'practicaleleven.SwitchDay'
 

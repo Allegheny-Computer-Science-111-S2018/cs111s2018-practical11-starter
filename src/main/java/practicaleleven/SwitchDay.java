@@ -1,5 +1,7 @@
 package practicaleleven;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 /** Program demonstrates usage of the switch statement.
@@ -9,10 +11,12 @@ import java.util.Scanner;
 * @author Janyl Jumadinova
 **/
 public class SwitchDay {
-  public static void main(String[] args) {
-    Scanner scan = new Scanner(System.in);
-    System.out.print( "Enter a day of the week: "  );
+
+  public static void main(String[] args) throws IOException {
+    File file = new File("input/day.txt");
+    Scanner scan = new Scanner(file);
     String day = scan.nextString();
+    
     // TO DO: Using a switch statement, print whether 'day' is a weekday or a weekend day.
   }
 }

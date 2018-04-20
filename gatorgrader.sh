@@ -145,9 +145,39 @@ if [ "$CHECK" = true ]; then
   # run the gatorgrader.py program to run the checks
   printf "%s\n" "${blu}Starting to check with GatorGrader...${end}"
   # ADD ADDITIONAL CALLS TO BOTH gatorgrader.py and determine_exit_code HERE
-  # --> GatorGrader CHECK: the reflection contains at least 2 paragraphs
-  python3 gatorgrader/gatorgrader.py --nowelcome --directories writing --checkfiles exceptions.md --paragraphs 4
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/practicaleleven/ \
+                                     --checkfiles CallingMethodsInSameClass.java --fragments "public static void printThree()" --fragmentcounts 1
   determine_exit_code $?
+
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/practicaleleven/ \
+                                     --checkfiles LoopStyles.java --fragments "for (" --fragmentcounts 1
+  determine_exit_code $?
+
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/practicaleleven/ \
+                                     --checkfiles LoopStyles.java --fragments "do {" --fragmentcounts 1
+  determine_exit_code $?
+
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/practicaleleven/ \
+                                     --checkfiles SwitchDay.java --fragments "switch (" --fragmentcounts 1
+  determine_exit_code $?
+
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/practicaleleven/ \
+                                     --checkfiles SwitchDay.java --fragments "break;" --fragmentcounts 1
+  determine_exit_code $?
+
+  # --> GatorGrader CHECK: the correct number of comments in the Java code
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/practicaleleven/ \
+                                     --checkfiles LoopStyles.java --multicomments 4 --language Java
+  determine_exit_code $?
+  
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/practicaleleven/ \
+                                     --checkfiles SwitchDay.java --multicomments 2 --language Java
+  determine_exit_code $?
+  
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/practicaleleven/ \
+                                     --checkfiles CallingMethodsInSameClass.java --multicomments 5 --language Java
+  determine_exit_code $?
+  
   # return the exit value from running the commands
   determine_human_exit_code $GATORGRADER_EXIT
   echo ""
